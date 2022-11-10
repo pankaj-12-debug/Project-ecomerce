@@ -54,7 +54,10 @@ header div span {
     top: 0;
     padding-left: 11px;
 }
-/* add album and photo */
+.cart-top.active{
+    right: 0;
+}
+/*------------------------------------ add album and photo ----------------------------*/
 main .container-product {
     max-width: 900px;
     margin: 0 auto;
@@ -171,6 +174,68 @@ main .see-cart {
     font-size: 15px;
     font-weight: bold;
 }
+/*-------inside the cart--------------------------------------*/
+main .cart-float {
+    min-height: 50vh;
+    border: 1px solid black;
+    position: fixed;
+    top: 50px;
+    height: 95%;
+    right: 0;
+    padding: 20px;
+    background: white;
+    display: none;
+    max-width: 27%;
+    
+}
+.cart-float.active{
+    transform: translateX(0);
+}
+
+.cart-float h2 {
+    text-align: center;
+    font-family: 'MedievalSharp', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.cart-float .cancel {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    margin-top: 0;
+    padding: 5px 10px;
+    border: black solid 1px;
+    color: black;
+    background: white;
+    cursor: pointer;
+
+}
+
+.cart-float .heading-div {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.cart-float span {
+    display: flex;
+    padding: 0 1rem;
+}
+
+
+.cart-total {
+    display: flex;
+    /* justify-content: center; */
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 /*-------------------------------------foter down side setting-------------------------*/
 footer {
     background: #56ccf2;
@@ -208,5 +273,27 @@ footer .icons {
 .icons img {
     width: 30px;
 } 
+/*--------------------------------notification---------------------------*/
+.notification{
+    background-color: aquamarine;
+    position: fixed;
+    width: 400px;
+    height: 100px;
+    bottom: 01rem;
+    right: 01rem;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(150%);
+    transition: .5s;
+    
+}
+.notification.active{
+    transform: translateY(0);
+}
+.notification h1{
+    color: #e74c4c;
+}
 
 

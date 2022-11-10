@@ -9,16 +9,17 @@
 </head>
 <body>
     <!--body part-->
-    <section>
+    <section id="container-body">
         <header>
             <ul>
                 <li><a href="#">STORE</a></li>
                 <li><a href="../about/index.html">ABOUT</a></li>
                 <li><a href="../home/index.html">HOME</a></li>
             </ul>
+
             <div class="cart">
-<a href="#" id="cart-top" class="cart-top" >cart <span class="cart-number">0</span></a>
-            </div>
+<a href="#" id="cart-top" class="cart-top" >cart <span class="cart-number" id="count">0</span></a>
+            </div> 
             <h1 id="title">The Generics</h1>
         </header>
     <!--added photo and album -->
@@ -76,6 +77,24 @@
         </div>
     </div>
 </section>
+<!---inside the cart-->
+<section id="cart-float" class="cart-float">
+    <button class="cancel" id="cancel">X</button>
+    <h2>CART</h2>
+    <div class="insideContainer">
+        <span class="itemTopic">ITEM</span>
+        <span class="priceTopic">PRICE</span>
+        <span class="quantityTopic">QUANTITY</span>
+    </div>
+    <div class="cart-item" id="cart-item"></div>
+    <div class="cart-total">
+        <span>
+            <span class="total-title"><strong>Total</strong></span>$<span id="total-value">0</span> </span>
+    </div>
+    <div id="order-div">
+        <button id="order-btn">Order Now</button>
+    </div>
+</section>
   <!--see cart button-->
 <div class="see-cart" >
     <button id="see-cart">See The Cart</button>
@@ -100,7 +119,11 @@
   </div>
 
 </footer>
-
+<!---notification-->
+<div class="notification">  
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+<script src="script.js"></script>
 
     </section>
 </body>
