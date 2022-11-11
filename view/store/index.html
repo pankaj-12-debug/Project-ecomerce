@@ -4,127 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>store</title>
     <link rel="stylesheet" href="style.css">
+    <title>Store</title>
 </head>
 <body>
-    <!--body part-->
-    <section id="container-body">
-        <header>
-            <ul>
+    <nav class="navbar">
+        <div class="navbarContainer"> >
+            <ul class="nav-list">
                 <li><a href="#">STORE</a></li>
                 <li><a href="../about/index.html">ABOUT</a></li>
                 <li><a href="../home/index.html">HOME</a></li>
             </ul>
-
-            <div class="cart">
-<a href="#" id="cart-top" class="cart-top" >cart <span class="cart-number" id="count">0</span></a>
-            </div> 
-            <h1 id="title">The Generics</h1>
-        </header>
-    <!--added photo and album -->
-<main>
-<section id="container-parent">
-    <section class="album" id="album">
-        <h3 class="title-music">MUSIC</h3>
-        <div class="container-product" id="container-product">
-            <div class="product" id="product">
-                <h4>ALBUM 1</h4>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWqebMmaIA_P9lrKFfV7cfgrgPnxshGjc5g&usqp=CAU" alt="album cover">
-                <br>
-                <label>$12.99</label>
-                <button class="add-btn" id="add-btn">ADD TO CART</button>
+        </div>
+      <div class="cartBtn">
+          <button id="cartBtn">cart</button>
+          <p id="count">0</p>
+        </div>
+    </nav>
+    <div class="banner">
+        <h1>The Generics</h1>
+    </div>
+     <section class="music-section" id="music-section">
+        <h1 class=heading>music</h1>
+        <div id="music-div" class="musicDiv">
+            <div id='albums' class="albums">
+                 <div class="album" id="album1">
+                <h1>Album 1</h1>
+                <div class="imgContainer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmWqebMmaIA_P9lrKFfV7cfgrgPnxshGjc5g&usqp=CAU" alt="" srcset="">
+                </div>
+                
+                <div class="details">
+                    <p>$12.99</p>
+                    <button id="1" value="album23" class="priceBtn">ADD TO CART</button>
+                </div>
+                </div>
+                <div class="album" id="album1">
+                    <h1>Album 2</h1>
+                    <div class="imgContainer">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyxMpmUMINcVdyQLbIL_-Nu5UUv-fRBhqUFg&usqp=CAU" alt="" srcset="">
+                    </div>
+                    
+                    <div class="details">
+                        <p>$14.99</p>
+                        <button id="2" class="priceBtn">ADD TO CART</button>
+                    </div>
+                    </div>
+                    <div class="album" id="album1">
+                        <h1>Album 3</h1>
+                        <div class="imgContainer">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF02rNK9YpmkNik99JmawSTjrc72o0nnyxDA&usqp=CAU" alt="" srcset="">
+                        </div>
+                        
+                        <div class="details">
+                            <p>$9.99</p>
+                            <button id="3" class="priceBtn">ADD TO CART</button>
+                        </div>
+                        </div>
+                        <div class="album" id="album1">
+                            <h1>Album 4</h1>
+                            <div class="imgContainer">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_RZWzdDhfE98Wgga9WvGnx8wRAODgs65vA&usqp=CAU" alt="" srcset="">
+                            </div>
+                            
+                            <div class="details">
+                                <p>$19.99</p>
+                                <button id="4" class="priceBtn" >ADD TO CART</button>
+                            </div>
+                            </div> 
+                            
             </div>
-            <div class="product" id="product">
-                <h4>ALBUM 2</h4>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyxMpmUMINcVdyQLbIL_-Nu5UUv-fRBhqUFg&usqp=CAU" alt="album cover">
-                <br>
-                <label>$15.99</label>
-                <button class="add-btn" id="add-btn">ADD TO CART</button>
         </div>
-        <div class="product" id="product">
-            <h4>ALBUM 3</h4>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF02rNK9YpmkNik99JmawSTjrc72o0nnyxDA&usqp=CAU" alt="album cover">
-            <br>
-            <label>$10.99</label>
-            <button class="add-btn" id="add-btn">ADD TO CART</button>
-    </div>
-    <div class="product" id="product">
-        <h4>ALBUM 4</h4>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx_RZWzdDhfE98Wgga9WvGnx8wRAODgs65vA&usqp=CAU" alt="album cover">
-        <br>
-        <label>$11.99</label>
-        <button class="add-btn" id="add-btn">ADD TO CART</button>
-</div>
-</div>
-<!--added another photo-->
-<section class="merch">
-    <h3 class="title-merch">Merch</h3>
-    <div class="container-merch">
-        <div class="product-merch" id="product">
-            <h4>T-shirt</h4>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvO2poGpgjywrCWdUvDNtcvgU57m0Gv1tfg&usqp=CAU" alt="album cover">
-            <br>
-            <label>$14.9</label>
-            <button class="add-btn" id="add-btn">ADD TO CART</button>
+    </section> 
+    <section class="merch-section" id="merch-section">
+        <h1 class=heading>MERCH</h1>
+        <div class="musicDiv">
+            <div id="merch" class="albums">
+                 <div class="album" id="tshirt">
+                <h1>T-Shirt</h1>
+                <div class="imgContainer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvO2poGpgjywrCWdUvDNtcvgU57m0Gv1tfg&usqp=CAU" alt="" srcset="">
+                </div>
+                
+                <div class="details">
+                    <div class="priceDetails" ><span>$</span><p>12.99</p></div>
+                    <button id="tshirt" class="priceBtn">ADD TO CART</button>
+                </div>
+                </div>
+                <div class="album" id="coffeCup">
+                    <h1>Coffe Cup</h1>
+                    <div class="imgContainer">
+                        <img src="https://images.pexels.com/photos/6800935/pexels-photo-6800935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                    </div>
+                    
+                    <div  class="details">
+                        <div class="priceDetails" ><span>$</span><p>18.99</p></div>
+                        
+                        <button id="coffeCup" class="priceBtn">ADD TO CART</button>
+                    </div>
+                    </div> 
+                   
+                        
+                           
+            </div>
         </div>
-        <div class="product-merch" id="product">
-            <h4>cap</h4>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDQ1gR-GlutL4LZp-Bzy8NIDJNcVJh2lQKkg&usqp=CAU" alt="album cover">
-            <br>
-            <label>$18.9</label>
-            <button class="add-btn" id="add-btn">ADD TO CART</button>
-        </div>
-    </div>
-</section>
-<!---inside the cart-->
-<section id="cart-float" class="cart-float">
-    <button class="cancel" id="cancel">X</button>
-    <h2>CART</h2>
-    <div class="insideContainer">
-        <span class="itemTopic">ITEM</span>
-        <span class="priceTopic">PRICE</span>
-        <span class="quantityTopic">QUANTITY</span>
-    </div>
-    <div class="cart-item" id="cart-item"></div>
-    <div class="cart-total">
-        <span>
-            <span class="total-title"><strong>Total</strong></span>$<span id="total-value">0</span> </span>
-    </div>
-    <div id="order-div">
-        <button id="order-btn">Order Now</button>
-    </div>
-</section>
-  <!--see cart button-->
-<div class="see-cart" >
-    <button id="see-cart">See The Cart</button>
-</div>
     </section>
-</section>
-</main>
-<!--footer setting down side-->
-<footer>
-    <h2>The Generics</h2>
-  <div class="icons">
-    <ul>
-        <li><a href="https://www.youtube.com"> <img src="https://prasadyash2411.github.io/ecom-website/img/6260efc8fc9a9002669d2f4ad9956cc0.jpg" 
-            alt=""> </a></li>
-        <li><a href="https://spotify.com">
-            <img src="https://prasadyash2411.github.io/ecom-website/img/Spotify%20Logo.png" alt=""> </li>
-        </a>
-       <li><a href="https://facebook.com">
-        <img src="https://prasadyash2411.github.io/ecom-website/img/Facebook%20Logo.png" alt="">
-    </a></li>
-    </ul>
-  </div>
+    <div class="cartDiv">
+        <button id="seeTheCartBtn" >See the cart</button>
 
-</footer>
-<!---notification-->
-<div class="notification">  
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
-<script src="script.js"></script>
-
+    </div>
+    <section class="cartContainer" id="cartContainer">
+        <button id="cartCloseBtn" class="cartCloseBtn">X</button>
+        <h1>CART</h1>
+        <div class="insideContainer">
+            <div class="titles">
+                <span class="itemTopic"><h5>ITEM</h5></span>
+                <span class="priceTopic"><h5>PRICE</h5></span>
+                <span class="quantityTopic"><h5>QUANTITY</h5></span>
+                
+        
+            </div>
+            <div class="cartItems">
+               
+                
+            </div>
+            <div class="total"><span><h2>Total</h2></span>$<span id="totalPrice">0</span>
+            </div>
+            <div class="purchase"><button id="purchaseBtn" >PURCHASE</button></div>
+        </div>
     </section>
+    <footer>
+        <div class="title">
+            <h1>The Generics</h1>
+        </div>
+        <div class="socialLinks">
+            <a href="https://www.youtube.com/"> <img src="https://img.icons8.com/ios-glyphs/44/000000/youtube-play.png"/></a>
+           <a href="https://www.facebook.com/">  <img src="https://img.icons8.com/ios-glyphs/44/000000/facebook.png"/></a>
+           <a href="https://www.spotify.com/us/"><img src="https://img.icons8.com/ios-glyphs/44/000000/spotify.png"/></a>
+          
+        </div>
+    </footer>
+    <div class="notification">
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>
