@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-product</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../store/index.html">STORE</a></li>
+            <li><a href="../about/index.html">ABOUT</a></li>
+            <li><a href="../home/index.html">HOME</a></li>
+            <li><a href="#">ADD PRODUCT</a></li>
+        </ul>
+        <h1 id="">The Generics</h1>
+    </header>
+    <form action="" onsubmit="addProducts(event)">
+    <input type="text" id="title" placeholder="title" required>
+    <br>
+    <input type="number" id="price" placeholder="price" required>
+    <br>
+    <input type="text" id="imageUrl" placeholder="imageUrl" required>
+    <br>
+    <button type="submit">Submit</button>
+    </form>
+    <script>
+        function addProducts(event)
+        {
+            event.preventDefault();
+            const obj={
+                title: document.getElementById('title').value,
+                price: document.getElementById('price').value,
+                imageUrl: document.getElementById('imageUrl').value
+            };
+            axios.post('http://localhost:3000/product',obj)
+                .then(res=>{
+                    console.log(res);
+                    document.getElementById('imageUrl').value = '';
+                    document.getElementById('title').value = '';
+                    document.getElementById('price').value = '';
+                })
+                .catch(err=>console.log(err));
+        }
+    </script>
+</body>
+</html>
